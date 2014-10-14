@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    h1{text-align:right;
+        font-size:50px;
+      
+      
+    }
+    body{font-family:'lucida grande',tehoma,verdana,arial,sans-serif;
+      margin-left:auto;
+      margin-right:auto;
+      padding:0px;
+      max-width:600px;
+      font-size:14px;
+        background-color: white;
+      
+   
+    }
+    img{width:100px;
+    height:120px;
+ float:right;
+      box-shadow:1px 1px 1px  gray;
+      
+    }
+    h2{
+      color:blue;
+      font-size:23px;
+      border-left: 3px solid blue;
+      padding:0px 7px ;
+    }
+   table{
+    width: 50%;
+      margin:0px 0px 0px 160px;
+     background-color: #f6f7f8;
+     box-shadow:1px 1px 1px  gray;
+     
+         
+    }
+    
+    tr{text-align:center;
+          
+    }
+  p.a{text-align:right;}
+    div.text{
+       padding:0px 20px 0px 100px;
+          }
+    
+   p.b{text-align:center;}
+    
+    div.pagenum{
+  border-top: 1px solid black;
+  
+font-size: smaller;}
+   span.t{background-color: yellow;}
+    
+    span.box{
+      background-color: #f6f7f8;
+      border:1px solid #dfe0e4;
+      border-radius:5px;
+      
+    }
+   
+  </style>
+</head>
+<body>
+ <div class="text"> <h1>중간고사</h1>
+  <p class="a">심윤주</p>
+   <h2>인라인 요소 목록</h2>
+  <p>
+    다음은HTML에서 자주 사용되는 요소들입니다.
+  </p>
+     <ul>
+       <li> <span class="t">a</span>:하이퍼링크 (Anchor)</li>
+      <li><span class="t">img</span>:이미지 (Image)</li>
+      <li><span class="t">span</span>:일반용도의 인라인 (Span)</li>
+      <li><span class="t">strong</span>:중요 (Strong)</li>
+      <li><span class="t">em</span>:강조 (Emphasis)</li>
+  </ul>
+
+ 
+  <h2>표만들기</h2>
+
+<p>
+  표를 만들려면 <span class="box">table</span> 요소를 사용합니다.
+</p>
+
+<table>
+  <thead>
+  <tr>
+  <th>음료</th>
+  <th>가격</th>
+  <th>알콜</th>
+    </tr>
+  </thead>
+   <tbody>
+          <tr>
+            <td>아메리카노</td>
+            <td>2,000</td>
+            <td>X</td>
+           </tr>
+     <tr>
+       <td>카페모카</td>
+       <td>2,500</td>
+       <td>X</td>
+            </tr>
+       <tr>
+       <td>맥주</td>
+       <td>3,000</td>
+       <td>Y</td>
+            </tr>
+        </tbody>
+    </table>
+
+   <div class="line"><h2>중첩된 목록</h2></div>
+<p>
+  목록 요소 안에 또다른 목록 요소를 중첩하여 사용할 수 있습니다.
+</p>
+
+<ol>
+  <li>
+<h3>홍길동</h3>
+        <ul>
+            <li>지각 없음</li>
+            <li>결석 없음</li>
+            <li>과제 만점</li>
+        </ul>
+    </li>
+    <li>
+        <h3>이몽룡</h3>
+        <ul>
+            <li>지각 2회</li>
+            <li>결석 없음</li>
+            <li>과제 만점</li>
+        </ul>
+    </li>
+</ol>
+
+     
+
+
+<h2>css란?</h2>
+
+
+ <p>
+   css는 Cascading Stylesheet의 약자이며 HTML같은 마크업 언어로 작성된 문서를
+   꾸미기 위해 사용합니다. HTML문서의<span class="box"> head</span>요소 안에 <span class="box">style</span> 요소를 넣고 CSS코드를 적으면 
+   해당 문서를 다양하게 꾸밀수 있습니다.
+</P>
+
+<P>
+  CSS에 대한 더 자세한 설명은 <a href="#">CSS</a>문서를 참고하세요.
+</p>
+
+  <h2>이미지 넣기 </h2>
+
+
+<p>
+  <img class="profile" src="http://kaywonsad.appspot.com/s/art01.jpg" alt="1">
+  이미지를 넣으려면 <span class="box">img</span>요소를 사용합니다.
+  </p>
+
+  <p><span class="box">src</span>속성에는 이미지의 경로(URL)를 적습니다.</p>
+
+<p>
+  이미지 요소에는 항상<span class="box">alt</span>속성을 사용하여 대체 텍스트를 
+  명시해주어야 합니다."alt"는 "Alternative text"의 약자로,이
+  미지를 표시 할 수 없을 이미지를 대신하여 나타낼 텍스트를 
+  뜻합니다.</p>
+
+<h2>블럭 요소 목록</h2>
+
+<p>다음은 HTML에서 자주 사용되는 요소들입니다.</p>
+
+  <ol>
+    <li><span class="t">p</span>:단락(Paragraph)</li>
+    <li><span class="t">h1</span>:큰제목(Heading 1)</li>
+    <li><span class="t">ul</span>:순서 없는 목록(Unordered List)</li>
+    <li><span class="t">ol</span>:순서 있는 목록(Ordered List)</li>
+    <li><span class="t">table</span>:표(table)</li>
+  </ol>
+  <div class="pagenum">
+    <p class="b">2014년 10월 14일 중간고사,심윤주 작성</p></div>
+  </div>
+</body>
+</html>
