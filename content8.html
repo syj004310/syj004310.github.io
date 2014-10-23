@@ -3,6 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>content</title>
+  
+  
+     <script> 
+7   window.addEventListener('scroll', function(e) { 
+8     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { 
+9       var content = document.querySelector('.content'); 
+10       document.body.appendChild(content.cloneNode(true)); 
+11     } 
+12   }); 
+13   </script> 
   <style> 
 
     
@@ -98,22 +108,12 @@ ul.a{
     }
     li.title2{font-weight:600;}
      
-    li.title3{font-weight:600;
+    {li.title3{font-weight:600;
      padding:0px 0px 0px 43px; }
-      
-    }
-    
     
    </style> 
     
-    <script> 
-7   window.addEventListener('scroll', function(e) { 
-8     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) { 
-9       var content = document.querySelector('.content'); 
-10       document.body.appendChild(content.cloneNode(true)); 
-11     } 
-12   }); 
-13   </script> 
+ 
 
 </head>
   <body>
