@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+     body{background-color:#e2e7ed; 
+     max-width: 800px;
+      margin-left:auto;
+      margin-right:auto;
+      padding: 40px;
+      font-family:'Nanum Gothic', 'san-serif';
+      }
+    @media print{
+    body{
+        background-color:white; 
+      }
+      
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+            }
+         @media screen and (max-width:300px){
+            #p-col {display:none;}
+            }
+         @media screen and (min-width: 361px) and (max-width 1000px)
+         {
+            #p-row { display:none;}
+            }
+            @media screen and (min-width: 100px){
+            }
+    
+    
+    li{font-size:10pt;
+    text-align:center;
+    list-style-type:none;
+    }
+      
+   ul.수상내역{text-align:center;
+     color:#777b7f;
+     line-height:20px;
+      padding-left:0px;}
+    
+        span.작게{font-size: 5pt;
+      }
+    li.수상내역{display:inline-block;
+    padding:15px;}
+    
+    
+        div.제목{
+    left: 10px;
+      right: 10px;
+      top: 10px;
+    margin-top:90px;
+          margin-bottom:100px;
+        }
+   
+    h2.소제목{font-size: 22pt;
+     text-align:center;
+    }
+  span.normal {font-weight: normal;
+     }
+    
+     h3.지아장커 {font-family:Nanum Gothic;
+       font-size: 15pt;
+    color:#676771;
+    text-align:center;
+    }
+    
+    img.상해전기{left: 15px;
+      top: 200px;
+    text-align:center;
+    }
+    
+    h3.영어 {font-family:baskerville;
+    font-size: 22pt;
+    font-weight:normal;
+      color:#676771;
+    text-align:center;
+    }
+    
+    
+    div.줄거리 {padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+      left: 5%;
+      right: 5%;
+      top: 1140px;
+      line-height:23px;
+    margin-top:20px;
+          margin-bottom:50px;}
+    
+    h2.줄거리{line-height:40px;
+      padding-top:0px;
+      padding-bottom:0px;
+      margin-top:0px;
+      margin-bottom:0px;
+     }
+     
+    @media screen and (max-width:600px){
+                div.줄거리 {padding: 1em;
+  -moz-column-count: 1;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 1;
+  -webkit-column-gap: 1em;
+  column-count: 1;
+  column-gap: 1em;
+      left: 5%;
+      right: 5%;
+      top: 1140px;
+      line-height:23px;
+    margin-top:20px;
+          margin-bottom:50px;} 
+            }
+
+    
+    
+    
+   
+    ul.주요정보>li{
+    text-align:center;
+    line-height:18px;
+    }
+    
+    img.포스터{
+       float:center;
+       }
+    
+    img.한장{
+       max-width:150px;
+       }
+    img.네장{
+       max-width:600px;
+       }
+    ul.중앙정렬{padding-left:0px;
+    }
+    
+    li.공간{margin-top:70px;
+      }
+    li.사진공간{margin-top:30px;
+      }
+    
+    
+    h3{font-size:16pt;
+    font-family:Nanum Myeongjo;}
+    h4{14pt;
+    margin-bottom:3px;}
+    
+
+    p.copyright{font-size: 6pt; 
+     color:#676771;
+      margin-top:100px;
+    text-align:right;}
+    
+  </style>
+</head>
+<body>
+<div class="poster">
+  
+ <ul class="수상내역">
+    <li class="수상내역">
+      <strong>2010</strong> <br>두바이 국제 영화제 <br>다큐멘터리상 수상
+    </li>
+    <li class="수상내역">
+   <span class="작게">SELECTION OFFICIELLE</span> <br>UN CERTAIN REGARD<br> <span class="작게">FESTIVAL DE CANNES</span>
+    </li>
+    <li class="수상내역">
+      <strong>2010</strong> <br>하와이 국제 영화제<br>
+      다큐멘터리상 수상
+    </li>
+  </ul>
+
+  <div class="제목">
+  <h2 class="소제목"><span class="normal">17人의 소설같은</span> 기억의 도시</h2>
+  <h3 class="지아장커">지아장커 작품</h3>
+<h1><img  src="https://googledrive.com/host/0B4o_ybv-191Cd00tdXZtSEp6cnc/상해전기-1.png" alt="상해전기"></h1>
+<h3 class="영어">I Wish I Know</h3>
+    </div>
+ 
+  <img class="영화장면" src="https://googledrive.com/host/0B4o_ybv-191Cd00tdXZtSEp6cnc/WA_AD_I_Wish_I_Knew_상해전기_ST1.jpg" alt="영화장면">
+  
+  <div class="줄거리">
+    <h2 class="줄거리">상해 사람들을 통해 들어보는 중국 근현대사의 숨은 이야기!</h2>
+    <p>급변하는 중국. 그 중 최고의 항구 도시 상해(上海:상하이)에는 혁명가와 자본가, 정치가, 군인, 예술가, 조직폭력배 등 다양한 사람들이 살고 있었다. 그리고 역사를 뒤흔든 혁명이나 정치적 암살은 물론, 아련한 사랑에 이르기까지 다양한 이야기들도 공존했다. 하지만 1949년, 중국 공산주의자들의 승리 이후, 상해의 수많은 사람들은 선택의 기로에 서게 된다. 하나는 상해를 떠나 홍콩이나 대만으로 가는 것으로 이는 곧 고향을 잃어야 함을 의미했다. 다른 하나는 상해에 남아 중국 문화혁명부터 시작된 정치적 재앙들을 묵묵히 견디는 것이었다. 이렇게 자신의 결정에 따라 각각 세 도시-상하이, 타이베이, 홍콩-로 흩어져 살게 된 17명의 사람들이 카메라 앞에서 자신들의 옛 상해 시절을 회상하며 이야기를 이어간다. 그들의 경험들은 마치 17개의 챕터로 이뤄진 소설처럼 얽히고설켜 1930년대부터 2010년에 이르는 상해의 모습을 우리에게 전해준다. 
+그리고 이야기는 영원히 변치 않고 방황하던 영혼 하나가 상해로 돌아와 황푸강 둑을 걸으며, 도시가 겪은 이 모든 변화의 스토리를 깨달아 가는 과정으로 완성된다.</p>
+  </div>
+  
+  <ul class="주요정보">
+  <li class="공간">
+    <h3>개요</h3>
+    <img class="포스터" src="https://googledrive.com/host/0B4o_ybv-191Cd00tdXZtSEp6cnc/이미지.png" alt="포스터">
+      <ul class="중앙정렬">
+        <li>다큐멘터리</li> 
+        <li>중국</li> 
+        <li>119분</li> 
+        <li>2014.11.07 개봉</li>
+     </ul>
+  </li>
+  <li class="공간">
+    <h3>감독</h3>  
+    <img class="한장" src="https://googledrive.com/host/0B4o_ybv-191Cd00tdXZtSEp6cnc/감독.jpg" alt="감독">
+      <ul class="중앙정렬">
+        <li>지아 장 커</li>
+      </ul> 
+  </li>
+  <li class="공간">
+    <h3>배우</h3>
+      <li> 
+        <img class="한장" src="https://googledrive.com/host/0B4o_ybv-191Cd00tdXZtSEp6cnc/nhnsvc.jpg" alt="주연배우">
+       <h4>주연</h4>
+        <ul class="중앙정렬">
+         <li>지오 타오</li> 
+         <li>인디카오</li>
+         <li>신이창</li>
+        </ul>
+     </li>
+     <li class="사진공간">
+       <img class="네장" src="https://googledrive.com/host/0B4o_ybv-191Cd00tdXZtSEp6cnc/조연.png" alt="조연배우">
+       <h4>조연</h4>  
+        <ul class="중앙정렬">
+         <li>반적화</li> 
+         <li>한한</li>
+         <li>허우 샤오시엔</li>
+         <li>임강</li> 
+         <li>왕 퉁</li>   
+        </ul>
+     </li>
+     <li class="공간">
+       <h3>각본</h3>
+        <ul class="중앙정렬">  
+         <li>지아 장 커</li>
+        </ul>
+    </li>
+    <li class="공간">
+      <h3>제작/수입/배급사 </h3>
+         <li>
+          <h4>수입</h4>
+           <ul class="중앙정렬"> 
+            <li>에스와이코마드</li>
+           </ul>
+          <h4>배급</h4>
+           <ul class="중앙정렬">
+            <li> 에스와이코마드</li> 
+           </ul>
+    </li>
+    <li class="공간">
+      <h3>등급</h3>
+       <ul class="중앙정렬">  
+        <li>[국내] 전체 관람가</li>
+       </ul>
+    </li>
+   </ul>
+  
+
+   <p class="copyright">FEATURE COPIRIGHT:©2010 XSIREAM PICTURIS LIMITED</p>
+  
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
+</html>
