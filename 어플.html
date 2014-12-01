@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-color:white;
+  font-family: 'Roboto Condensed', sans-serif;
+     
+
+      }
+    .상단{
+       position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 220px;
+      background-color: #4688f1;
+      color:white;
+ 
+    }
+  
+ 
+    .화살표{
+      color:white;
+     
+    }
+    .차{color:#a9c8f8;
+    }
+    .로켓{color:white;
+    }
+    .사람{color:#a9c8f8;
+   }
+    .위치{
+      color:white;
+      margin-left:43px;
+      margin-top:32px;
+    }
+    .목록{
+      
+    }
+    
+    ul{list-style-type:none;
+      padding-top:15px;
+    }
+    
+   .아이콘{display:inline-block;
+      padding-right:30px;
+    }
+    .정보{
+     
+      position:absolute;
+     left:52px;
+      top:50px;
+    }
+  .kaywon {
+      margin-left: 5.5em;
+      margin-top: 1em;
+      border-bottom: 1px solid white;
+      width:70%;
+      padding-bottom: 1em;
+    }
+    .line1{
+      border-bottom: 1px solid ;
+       border-color:#666666;
+      color:#666666;
+    }
+    .sinsa {
+      margin-top:1.4em;
+      margin-left: 5.5em;
+      margin-bottom: 3em;
+      }   
+    .arrow {
+      float: right;
+      margin-top: -2.0em;
+      margin-right: 1em;
+      font-size: 25px;
+      color: #a9c8f8;
+    }
+     .depart {
+    position:absolute;
+       top:30px;
+       left:89px;
+      
+    }
+    .option {
+      float: right;
+      margin-top: 2em;
+      margin-right: 3em;
+    }
+   
+    .위치1{position:absolute;
+      
+      
+    }
+    .위치2
+   {position:absolute;
+      top:140px;
+     
+   }
+    .목록{
+      position:absolute;
+      top:112px;
+      left:47px;
+      
+    }
+    .영역{
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 200px;;
+      bottom: 0;
+      height: 80px;
+      background-color: #366ad3;
+      color: white;
+    }
+    .하단{
+       position: fixed;
+      overflow:scroll;
+      overflow-x:hidden;
+      top:280px;
+      bottom: 50px;
+        left:0px;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      padding:10px;
+
+    }
+        .시간 {position:absolute;
+     left:80%;
+    top:15px;}
+  
+    .slider{
+     position:absolute;
+     top:30px;
+     left:40px;
+   }
+    .목록1{
+      padding-bottom:15px;
+    }
+    .time{
+      padding-bottom:160px;
+    }
+    .b{font-weight:bold;
+    color:black;}
+    .car{position:absolute;
+      top:12px;
+      left:0px;
+      color:#666666;
+    }
+    .정보1 {
+      margin-left:44px;
+    }
+    .간격{
+      padding-bottom:163px;
+    }
+    .blue{
+       margin-left:0.5em;
+      background-color: blue;
+      color: white;
+      padding-right:2px;
+       padding-left:2px;
+      
+      
+    }
+     .green{
+       margin-left:0.5em;
+      background-color:green;
+      color: white;
+      padding-right:2px;
+       padding-left:2px;
+      
+      
+    }
+     .red{
+       margin-left:0.5em;
+      background-color: red;
+      color: white;
+      padding-right:2px;
+       padding-left:2px;
+      
+      
+    }
+    </style>
+</head>
+<body>
+  <div class="상단">
+   
+    <ul><li class="아이콘"><span class="화살표" ><i class="fa fa-arrow-left fa-lg"></i></span></li>
+      <li class="아이콘"> <span class="차"><i class="fa fa-car fa-lg"></i></span></li>
+      <li class="아이콘"> <span class="로켓"><i class="fa fa-rocket fa-lg"></i></span></li>
+      <li class="아이콘"> <span class="사람"><i class="fa fa-male fa-lg"></i></span></li>
+   </ul>
+   
+    <div class="위치">
+      <span class="위치1"> <i class="fa fa-map-marker fa-lg"></i></span>
+      <span class="목록">  <i class="fa fa-ellipsis-v fa-lg"></i></span>
+      <span class="위치2"> <i class="fa fa-map-marker fa-lg"></i></span>
+    </div>
+    
+    
+  <div class="kaywon">
+  계원예술대학교
+  </div>
+  <div class="sinsa">
+  신사동가로수길
+  </div>
+      <div class="arrow">
+    <i class="arrow fa fa-arrows-v"></i>
+  </div>
+    
+    <section class="영역">
+      <span class="slider"><i class="fa fa-sliders  fa-lg"></i></span>
+    <span class="depart">Depart at 4:09 PM</span>
+    <span class="option">OPTIONS</span>
+    </section>
+
+  </div>
+  <div class="하단">
+    <ul class="car">
+      <li class="간격"><i class="fa fa-car "></i></li>
+         <li class="간격"><i class="fa fa-car "></i></li>
+               <li class="간격"><i class="fa fa-car "></i></li>
+         <li class="간격"><i class="fa fa-car "></i></li>
+    </ul>
+    
+    <div class="line1">
+      
+    <ul class="정보1">
+          <li class="목록1"><span class="b">4:09-5:35PM</span></li>
+       <li class="목록1">
+        <i class="fa fa-male"></i>
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">1-1</span></i>
+
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">441</span></i>
+
+       </li>
+       <li class="목록1">4:25PM from 계원예술대학교</li>
+       <li class="목록1">
+         <i class="fa fa-male"></i>
+         10min Every 12min
+       </li>
+    </ul>
+  </div>
+     <div class="line1">
+      
+    <ul class="정보1">
+          <li class="목록1"><span class="b">4:09-5:41PM</span></li>
+       <li class="목록1">
+        <i class="fa fa-male"></i>
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">1-1</span></i>
+
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="green">4318</span>
+         </i>
+          <i class="fa fa-angle-right"></i>
+            <i class="fa fa-bus"><span class="red">9404</span>
+         </i>
+
+
+       </li>
+       <li class="목록1">4:25PM from 계원예술대학교</li>
+       <li class="목록1">
+         <i class="fa fa-male"></i>
+         10min Every 12min
+       </li>
+    </ul>
+  </div>
+   <div class="line1">
+      
+    <ul class="정보1">
+          <li class="목록1"><span class="b">4:09-5:49PM</span></li>
+       <li class="목록1">
+        <i class="fa fa-male"></i>
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">51</span></i>
+
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">540</span></i>
+         
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">148</span></i>
+
+       </li>
+       <li class="목록1">4:25PM from 계원예술대학교</li>
+       <li class="목록1">
+         <i class="fa fa-male"></i>
+         10min Every 12min
+       </li>
+    </ul>
+  </div>
+   <div class="line1">
+      
+    <ul class="정보1">
+          <li class="목록1"><span class="b">4:09-5:47PM</span></li>
+       <li class="목록1">
+        <i class="fa fa-male"></i>
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">51</span></i>
+
+         <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="red">3038</span></i>
+           <i class="fa fa-angle-right"></i>
+         <i class="fa fa-bus"><span class="blue">145</span></i>
+
+
+       </li>
+       <li class="목록1">4:25PM from 계원예술대학교</li>
+       <li class="목록1">
+         <i class="fa fa-male"></i>
+         10min Every 12min
+       </li>
+    </ul>
+  </div>
+  
+  <ul class="시간">
+        <li class="time"><span class="b">1</span>hr<span class="b">25</span>min</li>
+      <li class="time"><span class="b">1</span>hr<span class="b">25</span>min</li>
+       
+      <li class="time"><span class="b">1</span>hr<span class="b">25</span>min</li>
+       
+      <li class="time"><span class="b">1</span>hr<span class="b">25</span>min</li>
+   
+       
+  </ul>
+  </div>
+    
+</body>
+</html>
